@@ -56,7 +56,7 @@ class VariableStream
     }
 }
 
-class FPDFExtension extends FPDF
+class FPDFE extends FPDF
 {
 
     function __construct($orientation='P', $unit='mm', $size='A4')

@@ -1,18 +1,18 @@
 # FPDFExtension
 
-## Table of Contents
+## Tabla de contenidos
 + [About](#about)
-+ [Getting Started](#getting_started)
-+ [Usage](#usage)
++ [Empezando](#getting_started)
++ [Uso](#usage)
 + [Contributing](../CONTRIBUTING.md)
 
 ## About <a name = "about"></a>
-FPDFExtesion es una versión modificada de FPDF con algunas caracteristicas nuevas.
+FPDFExtesion es una versión modificada de FPDF con algunas características nuevas.
 
-## Getting Started <a name = "getting_started"></a>
-### Prerequisites
+## Empezando <a name = "getting_started"></a>
+### Prerequisitos
 
-What things you need to install the software and how to install them.
+Antes de usar debe cumplir algunos prerequisitos
 
 ```
 Tener instalado FPDF
@@ -20,23 +20,35 @@ Tener instalado FPDF
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
+Pasos para instalar FPDFExtension en el proyecto.
 
-Say what the step will be
 
+Clonar el repositorio
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+git clone https://github.com/MendozaNicolas/FPDFExtension.git
 ```
 
-End with an example of getting some data out of the system or using it for a little demo.
 
-## Usage <a name = "usage"></a>
+
+```
+Mover el archivo fpdfe.php a la carpeta de trabajo
+```
+
+Y ya esta listo para usar
+```
+<?php
+require('fpdfe.php');
+
+$pdf = new FPDFE();
+$pdf->AddPage();
+$pdf->SetFont('Arial','B',16);
+$pdf->Cell(40,10,'¡Hola, Mundo!');
+$pdf->Output();
+?>
+```
+## Uso <a name = "usage"></a>
 
 Add notes about how to use the system.
+
+
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
